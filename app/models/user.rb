@@ -11,4 +11,6 @@
 
 class User < ActiveRecord::Base
   attr_accessible :company_id, :name
+  
+  belongs_to :company, inverse_of: :users
 end
