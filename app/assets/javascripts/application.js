@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min
+//= require bootstrap-select
+//= require knockout-2.2.0
+//= require knockout.mapping-latest
 //= require_tree .
