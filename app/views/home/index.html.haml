@@ -1,4 +1,36 @@
 - content_for :title, 'Home'
-%p
-  Hello World!
-  %i.icon-search
+
+.row
+  .span8.offset2
+    .hero-unit
+      %h1
+        %i.icon-exclamation-sign
+        Daycare Helper
+  
+      %p
+        %i.icon-beaker
+        Version #{Daycare::Application::VERSION} - This is an experimental version!
+    
+.row
+  .span3
+    %h2 Tell someone who cares
+    %address
+      %strong Raphael Amadeus
+      %br
+      %a{href: 'mailto:r.amadeus@daycarepower.com'}
+        %i.icon-envelope
+        r.amadeus@daycarepower.com
+  .span9
+    %h2 OMG I love well organised and easy grid systems
+    %p
+      You should too
+    %p
+      ALSO I refuse to get bogged down in design, so the rules for now are:
+      %ul
+        %li greys only. No blacks, no whites.
+        %li no round borders unless bootstrap does it
+        %li only sans serif font
+
+        
+
+      
