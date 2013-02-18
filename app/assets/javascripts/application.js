@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min
+//= require twitter/bootstrap
 //= require bootstrap-select
 //= require knockout-2.2.0
 //= require knockout.mapping-latest

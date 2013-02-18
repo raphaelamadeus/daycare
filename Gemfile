@@ -49,7 +49,10 @@ gem 'awesome_print'
 
 gem 'pry-rails'
 
-gem 'font-awesome-rails'
+# gem 'font-awesome-rails'
+
+# Use bootstrap rails
+gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
