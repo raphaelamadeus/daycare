@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title= yield(:title) + " | DAYCARE APP"
+    = stylesheet_link_tag 'application', media: 'all'
+    
+  %body
+    .container
+      .row
+        .span12
+          #Flash
+            - [:notice, :error, :success].each do |key|
+              - unless flash[key].blank?
+                %p{:class => "flash flash-#{key}"}= flash[key] 
+      .row
+        .span12
+          #Main
+            = yield
+      
+    = javascript_include_tag "application"

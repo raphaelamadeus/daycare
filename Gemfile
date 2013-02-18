@@ -5,9 +5,25 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+  gem 'better_errors'
+  gem 'annotate'
+  gem 'pry-rails'
+  gem 'pry-remote', :require => 'pry-remote'
+end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'spork'
+  gem 'factory_girl_rails'
+  gem 'poltergeist'
+  gem 'rack-contrib'
+end
 
+group :development, :test do
+  gem 'sqlite3'      
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -21,6 +37,19 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'haml'
+gem 'haml-rails'
+
+gem 'devise'
+
+gem 'rails_admin'
+
+gem 'awesome_print'
+
+gem 'pry-rails'
+
+gem 'font-awesome-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
