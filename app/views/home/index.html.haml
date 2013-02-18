@@ -1,15 +1,21 @@
 - content_for :title, 'Home'
 
-.row
-  .span8.offset2
-    .hero-unit
-      %h1
-        %i.icon-exclamation-sign
-        Daycare Helper
-  
-      %p
-        %i.icon-beaker
-        Version #{Daycare::Application::VERSION} - This is an experimental version!
+.hero-unit
+  %h1
+    %i.icon-exclamation-sign
+    Daycare Helper
+  %p
+  %blockquote
+    %i.icon-quote-left
+    The biggest adventure you can ever take is to live the life of your dreams
+    %i.icon-quote-right
+    %small
+      %cite
+        Oprah Winfrey
+  %p
+    %small
+      %i.icon-beaker 
+      v#{Daycare::Application::VERSION} - experimental
     
 .row
   .span3
@@ -21,16 +27,10 @@
         %i.icon-envelope
         r.amadeus@daycarepower.com
   .span9
-    %h2 OMG I love well organised and easy grid systems
+    %h2 Design Rules
     %p
-      You should too
-    %p
-      ALSO I refuse to get bogged down in design, so the rules for now are:
       %ul
         %li greys only. No blacks, no whites.
         %li no round borders unless bootstrap does it
         %li only sans serif font
-
-        
-
-      
+    
